@@ -3,7 +3,7 @@ const http = require('http');
 const app = express();
 
 // Port, den du in deiner JIT-App brauchst
-const PORT = 7090;
+const PORT = process.env.PORT || 7090;
 
 // Heartbeat Route
 app.get('/heartbeat', (req, res) => {
